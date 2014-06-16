@@ -1,0 +1,15 @@
+*.swp
+tmp
+./*.rpm
+*.iso
+conf/mock/*.cfg
+repos/yumcache/*
+repodata
+repos/*-repo/*
+repos/*/last-updated
+repos/my-srpm-repo/*.tgz
+repos/my-srpm-repo/*.tar.gz
+repos/my-srpm-repo/*.bz2
+conf/yum/yum.conf
+ports/repo/*
+*CHECKSUM

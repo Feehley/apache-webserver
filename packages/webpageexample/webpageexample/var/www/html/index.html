@@ -1,0 +1,27 @@
+<h2>READ ME</h2>
+
+<p>This is where all of your webcontent will be hosted. &nbsp;</p>
+
+<p>Here are the steps to creating a proper RPM:</p>
+
+<ul>
+	<li>Copy the Makefile from the packages/webpageexample/Makefile to your new package directory.</li>
+
+	<li>Edit the Makefile to have your package name instead of "webpageexample".</li>
+
+	<li>Copy the workingexample.spec from the /packages/webpageexample/webpageexample.spec to your new package directory.</li>
+
+	<li>Change the name of the spec file and the name listed in the spec file to accomodate your package's name.</li>
+
+	<li>Run make rpm in the packages/yournewpackagedirectory/.</li>
+
+	<li>Run make bare in the packages/yournewpackagedirectory/.</li>
+
+	<li>The CONFIG_BUILD (in clipdev/clip/) needs to have your package's name included in the PACKAGES (such as where webpageexample is located).</li>  
+
+	<li>At the top level directory, clipdev/clip/, run make yourpackagename-rpm.</li>
+
+	<li>In /etc/httpd/conf/httpd.conf, change the ipaddresses to the ipaddress that you are using.</li>
+
+	<li>In the kickstart file (/home/clipdev/clip/kickstart/clip/clip-rhel6.ks), change webpageexample to your package's name.</li>
+</ul>
